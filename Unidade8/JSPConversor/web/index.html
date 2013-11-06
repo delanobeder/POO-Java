@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Conversão de Temperaturas</title>
+    </head>
+    <body>
+        <form name="entry" method="post" action="conversão.jsp">
+            Conversão: 
+            <input type ="radio" name="tipo" value="0" checked="checked">Fahrenheit
+            <input type ="radio" name="tipo" value="1">Kelvin
+            <br/> <br/>
+            Inicial (<code>&deg;</code>C):
+            <input type ="text" name="inicial">
+            <br/> <br/>
+            Final&nbsp;&nbsp; (<code>&deg;</code>C):
+            <input type ="text" name="final">
+            <br/> <br/>
+            Variação:
+            <input type ="radio" name="var" value="5" checked="checked">5
+            <input type ="radio" name="var" value="10">10
+            <br/><br/>
+            <input type="reset" name="reset" value="Inicializa Valores">
+            <input type="submit" name="submit" value="Solicita a Conversão">
+        </form>
+    </body>
+</html>
+

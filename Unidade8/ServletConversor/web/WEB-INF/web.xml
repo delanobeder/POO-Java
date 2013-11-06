@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <servlet-name>conversão</servlet-name>
+        <servlet-class>servlet.ServletConversão</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>fahrenheit</servlet-name>
+        <servlet-class>servlet.ServletCelsiusFahrenheit</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>kelvin</servlet-name>
+        <servlet-class>servlet.ServletCelsiusKelvin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>conversão</servlet-name>
+        <url-pattern>/conversão</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>fahrenheit</servlet-name>
+        <url-pattern>/fahrenheit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>kelvin</servlet-name>
+        <url-pattern>/kelvin</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>
+            index.html
+        </welcome-file>
+    </welcome-file-list>
+</web-app>
